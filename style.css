@@ -1,0 +1,53 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    background: url(fon.jpg) center/cover;
+    position: relative;
+}
+
+.person {
+    position: relative;
+    bottom: 801px;
+    right: 40px;
+    animation-duration: 3s;
+    animation-name: go;
+}
+
+@keyframes go {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.text {
+    color: rgb(6, 59, 26);
+    font-family: Caveat;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.container {
+    padding: 20px;
+    position: absolute;
+    background-color: bisque;
+    border-radius: 15px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
